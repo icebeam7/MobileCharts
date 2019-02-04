@@ -1,4 +1,8 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
+
+using MobileCharts.Helpers;
+using MobileCharts.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,26 +11,14 @@ namespace MobileCharts
 {
     public partial class App : Application
     {
+        public static List<string> ColorsList;
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
-        }
-
-        protected override void OnStart()
-        {
-            // Handle when your app starts
-        }
-
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
+            ColorsList = ColorHelper.GetRandomColors().ToList();
+            MainPage = new NavigationPage(new MenuView());
         }
     }
 }

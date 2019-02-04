@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileCharts.Views.MenuView"
+             Title="Xamarin Mobile Charts">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Label Text="MicroCharts" FontAttributes="Bold" />
+                <Button Text="Bar" Clicked="MicroChart_Bar_Clicked" />
+                <Button Text="Donut" Clicked="MicroChart_Donut_Clicked" />
+                <Button Text="Gauge" Clicked="MicroChart_Gauge_Clicked" />
+                <Button Text="Line" Clicked="MicroChart_Line_Clicked" />
+                <Button Text="Point" Clicked="MicroChart_Point_Clicked" />
+                <Button Text="Radar" Clicked="MicroChart_Radar_Clicked" />
+                <Label Text="OxyPlot" FontAttributes="Bold" />
+                <Button Text="Pie" Clicked="OxyPlot_Pie_Clicked" />
+                <Button Text="Bar" Clicked="OxyPlot_Bar_Clicked" />
+                <Button Text="Area" Clicked="OxyPlot_Area_Clicked" />
+                <Button Text="Line" Clicked="OxyPlot_Line_Clicked" />
+                <Button Text="CandleStick" Clicked="OxyPlot_CandleStick_Clicked" />
+                <Button Text="HeatMap" Clicked="OxyPlot_HeatMap_Clicked" />
+                <Button Text="Scatter" Clicked="OxyPlot_Scatter_Clicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
